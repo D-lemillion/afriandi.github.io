@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body {
+    display: flex;
+    background-color: #90bef7;
+    background: linear-gradient(to right, #90bef7, #f4eeee);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(36, 34, 34);
+}
+.box {
+    position: relative;
+    width: 560px;
+    height: 570px;
+    background: rgb(168, 137, 137);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(100, 89, 89);
+}
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 680px;
+    height: 520px;
+    background: linear-gradient(0deg, transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 2;
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 680px;
+    height: 520px;
+    background: linear-gradient(0deg, transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 2;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.borderline {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderline::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 680px;
+    height: 520px;
+    background: linear-gradient(0deg, transparent,transparent,#e9565d,#e9565d,#e9565d);
+    z-index: 3;
+    transform-origin: bottom right;
+    animation: animate 4s linear infinite;
+    animation-delay: -1s;
+}
+.borderline::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 680px;
+    height: 520px;
+    background: linear-gradient(0deg, transparent,transparent,#e9565d,#e9565d,#e9565d);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 3s linear infinite;
+    animation-delay: -1s;
+}
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+.box form {
+    position: absolute;
+    inset: 4px;
+    background: rgb(255, 255, 255);
+    padding: 30px 20px;
+    border-radius: 8px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2 {
+    color: #e9565d;
+    font-weight: 1000px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.1em; 
+}
+.box form .social-icons  {
+    color: #e9565d;
+    text-align: center;
+}
+.box form .social-icons a{
+    border: 3px solid#e9565d;
+    border-radius: 2%;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    transition: 0.5s;
+    color: #e9565d;
+    font-size: 30px;
+    margin: 10px;
+}
+.box form .social-icons a:hover {
+    box-shadow: 4px 12px #bdaead;
+}
+.box form .inputBox {
+    position: relative;
+    width: 500px;
+    margin-top: 35px;
+    
+}
+.box form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+} 
+.box form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #e9565d;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+    color:  #e9565d;
+    font-size: 0.9em;
+    transform: translateY(-44px);
+    
+    
+}
+.box form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background:  #e9565d;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i
+{
+    height: 34px;
+}
+.box .links{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+.box .links a {
+    color: #e9565d;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.box .links1 button {
+    background-color: #952323;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-left: 25px;
+    margin-right: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    width: 200px;
+    text-transform: uppercase;
+    justify-content: center;
+    cursor: pointer;
+  }
+.box .links1 button:hover {
+    box-shadow: 6px 7px #bdaead;
+}
+.box .links1 button span{
+    margin-left: 2px;
+    
+}
+@media screen and (max-width: 600px) {
+    .box {
+        position: relative;
+        width: 380px;
+        height: 570px;
+        background: rgb(168, 137, 137);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgb(100, 89, 89);
+    }
+    .box form .social-icons a{
+        border: 3px solid#e9565d;
+        border-radius: 2%;
+        display: inline-flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        transition: 0.5s;
+        color: #e9565d;
+        font-size: 30px;
+        margin: 10px;
+    }
+    .box form .social-icons a:hover {
+        box-shadow: 4px 12px #bdaead;
+    }
+    .box form .inputBox {
+        position: relative;
+        width: 330px;
+        margin-top: 35px;
+        
+    }
+    .box form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    } 
+.box form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #e9565d;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+    color:  #e9565d;
+    font-size: 0.9em;
+    transform: translateY(-44px);
+    
+    
+}
+.box form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background:  #e9565d;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    pointer-events: none;
+}
+    .box form .inputBox input:valid ~ i,
+    .box form .inputBox input:focus ~ i
+    {
+        height: 34px;
+    }
+    .box .links{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+
+    .box .links a {
+        color: #e9565d;
+        font-size: 15px;
+        text-decoration: none;
+        
+    }
+    .box .links1 button {
+        background-color: #952323;
+        color: #ffffff;
+        transition: 0.5s;
+        font-size: 12px;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        margin-left: 25px;
+        margin-right: 10px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        width: 120px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .box .links1 button:hover {
+        box-shadow: 6px 7px #bdaead;
+    }
+    .box .links1 button span{
+        margin-left: 5px;
+    }
+}
