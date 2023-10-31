@@ -224,9 +224,9 @@ body {
 @media screen and (max-width: 600px) {
     .box {
         position: relative;
-        width: 380px;
-        height: 570px;
-        background: rgb(168, 137, 137);
+        width: 350px;
+        height: 650px;
+        background: rgb(126, 54, 54);
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 5px 15px rgb(100, 89, 89);
@@ -250,7 +250,7 @@ body {
     }
     .box form .inputBox {
         position: relative;
-        width: 330px;
+        width: 300px;
         margin-top: 35px;
         
     }
@@ -325,7 +325,7 @@ body {
         padding: 10px;
         border: 1px solid transparent;
         border-radius: 3px;
-        margin-left: 25px;
+        margin-left: 15px;
         margin-right: 10px;
         font-weight: 100;
         letter-spacing: 1px;
