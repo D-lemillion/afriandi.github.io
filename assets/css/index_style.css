@@ -9,6 +9,7 @@ body{
 a{
     text-decoration: none;
 }
+
 header{
     width: 100%;
     max-width: 95%;
@@ -19,15 +20,28 @@ header{
     position: relative;
     z-index: 100;
     padding: 0 10px;
+    padding-left: 10px;
+    
 }
 header a{
     color: #ddd;
     margin-right: 40px;
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 200px;
+    align-items: center;
 }
 header a:hover {
-    color: #ffffff; /* Warna teks saat tombol dihover */
+    color: #f1683a; /* Warna teks saat tombol dihover */
 }
+
+header img {
+    width: 70px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: 70px;
+    margin-right: 10px; /* Berikan margin antara logo dan teks */
+    margin-top: 40px;
+}
+
+
 /* carousel */
 .carousel{
     height: 100vh;
@@ -51,7 +65,7 @@ header a:hover {
 }
 .carousel .list .item .content{
     position: absolute;
-    top: 15%;
+    top: 18%;
     width: 100%;
     max-width: 95%;
     left: 50%;
@@ -349,16 +363,16 @@ header a:hover {
         
     }
     .carousel .list .item .content .title{
-        font-size: 20px;
-    }
-    .carousel .list .item .content .author{
-        font-size: 20px;
-    }
-    .carousel .list .item .content .des{
         font-size: 15px;
     }
+    .carousel .list .item .content .author{
+        font-size: 15px;
+    }
+    .carousel .list .item .content .des{
+        font-size: 10px;
+    }
     .carousel .list .item .content .topic{
-        font-size: 30px;
+        font-size: 20px;
     }
     .thumbnail {
         top: 66%;
