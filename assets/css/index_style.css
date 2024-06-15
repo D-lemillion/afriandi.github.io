@@ -35,10 +35,10 @@ header a:hover {
 }
 
 header img {
-    width: 70px; /* Sesuaikan ukuran logo sesuai kebutuhan */
-    height: 70px;
+    width: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: 50px;
     margin-right: 10px; /* Berikan margin antara logo dan teks */
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 
@@ -77,19 +77,19 @@ header img {
 }
 .carousel .list .item .author{
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
     font-size: 5em;
     font-weight: bold;
-    line-height: 1.3em;
+    line-height: 1.1em;
 }
 .carousel .list .item .topic{
     color: #f1683a;
 }
 .carousel .list .item .des{
-    color: #ddd;
+    color: #ffffff;
     font-family: Poppins;
     font-size: 15px;
     font-weight: bold;
@@ -121,12 +121,13 @@ header img {
 /* thumbail */
 .thumbnail{
     position: absolute;
-    bottom: 50px;
+    bottom: 8px;
     left: 50%;
     width: max-content;
     z-index: 100;
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .thumbnail .item{
     width: 150px;
@@ -181,7 +182,7 @@ header img {
 /* arrows */
 .arrows{
     position: absolute;
-    top: 80%;
+    top: 90%;
     right: 52%;
     z-index: 100;
     width: 300px;
@@ -189,20 +190,22 @@ header img {
     display: flex;
     gap: 10px;
     align-items: center;
+    
 }
 .arrows button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: rgb(255, 255, 255);
     border: none;
-    color: #fff;
+    color: #000000;
     font-family: monospace;
     font-weight: bold;
-    transition: .5s;
+    transition: .5s;    
+    cursor: pointer;
 }
 .arrows button:hover{
-    background-color: #fff;
+    background-color: #f1683a;
     color: #000;
 }
 
@@ -220,7 +223,7 @@ header img {
 .carousel .list .item:nth-child(1) .content .buttons
 {
     transform: translateY(50px);
-    filter: blur(20px);
+    filter: blur(15px);
     opacity: 0;
     animation: showContent .5s 1s linear 1 forwards;
 }
@@ -362,7 +365,7 @@ header img {
     header img {
         width: 40px;
         height: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 8px;
     }
     header a{
         margin-right: 10px;
@@ -371,23 +374,28 @@ header img {
     }
     
     .carousel .list .item .content{
-        top: 8%; /* Ubah posisi konten */
-        padding-right: -20px; /* Sesuaikan ruang di kanan konten */
+        top: 10%; /* Ubah posisi konten */
+        padding-right: 24px; /* Sesuaikan ruang di kanan konten */
+        
     }
-    .carousel .list .item .content .title{
-        font-size: 18px;
-    }
+    .carousel .list .item .title,
+    .carousel .list .item .topic{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.1em;
+}
     .carousel .list .item .content .author{
         font-size: 18px;
+        font-weight: bold;
+        
     }
     .carousel .list .item .content .des{
         font-size: 13px;
+        font-weight: bold;
     }
-    .carousel .list .item .content .topic{
-        font-size: 20px;
-    }
+    
     .thumbnail {
-        top: 42%;
+        top: 60%;
     }
 
     /* Sesuaikan lebar item thumbnail */
@@ -396,7 +404,7 @@ header img {
         height: 220px;
     }
     .arrows {
-        top: 60%;
+        top: 86%;
     }
     .carousel .list .item img {
        
