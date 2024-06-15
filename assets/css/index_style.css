@@ -97,7 +97,7 @@ header img {
     font-size: 15px;
     font-weight: bold;
     text-shadow: 0 8px 14px #0004;
-    text-align: justify;
+    text-align: left;
 }
 .carousel .list .item .buttons a{
     display: inline-block;
@@ -380,7 +380,7 @@ header img {
     
     .carousel .list .item .content{
         top: 13%; /* Ubah posisi konten */
-        padding-right: 8px; /* Sesuaikan ruang di kanan konten */
+        padding-right: 2px; /* Sesuaikan ruang di kanan konten */
         
     }
     .carousel .list .item .title,
@@ -395,12 +395,12 @@ header img {
         
     }
     .carousel .list .item .content .des{
-        font-size: 13px;
+        font-size: 11.5px;
         font-weight: bold;
     }
     
     .thumbnail {
-        top: 65%;
+        top: 58%;
     }
 
     /* Sesuaikan lebar item thumbnail */
@@ -409,7 +409,7 @@ header img {
         height: 220px;
     }
     .arrows {
-        top: 89%;
+        top: 84%;
     }
     .carousel .list .item img {
     width: 100%;
