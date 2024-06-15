@@ -97,6 +97,7 @@ header img {
     font-size: 15px;
     font-weight: bold;
     text-shadow: 0 8px 14px #0004;
+    text-align: justify;
 }
 .carousel .list .item .buttons a{
     display: inline-block;
