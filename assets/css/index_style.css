@@ -73,26 +73,30 @@ header img {
     padding-right: 30%;
     box-sizing: border-box;
     color: #fff;
-    text-shadow: 0 5px 10px #0004;
+    text-shadow: 0 8px 14px #0004;
 }
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 3px;
+    text-shadow: 0 8px 14px #0004;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
     font-size: 5em;
     font-weight: bold;
     line-height: 1.1em;
+    text-shadow: 0 8px 14px #0004;
 }
 .carousel .list .item .topic{
     color: #f1683a;
+    text-shadow: 0 8px 14px #0004;
 }
 .carousel .list .item .des{
     color: #ffffff;
     font-family: Poppins;
     font-size: 15px;
     font-weight: bold;
+    text-shadow: 0 8px 14px #0004;
 }
 .carousel .list .item .buttons a{
     display: inline-block;
@@ -374,18 +378,18 @@ header img {
     }
     
     .carousel .list .item .content{
-        top: 10%; /* Ubah posisi konten */
-        padding-right: 24px; /* Sesuaikan ruang di kanan konten */
+        top: 13%; /* Ubah posisi konten */
+        padding-right: 8px; /* Sesuaikan ruang di kanan konten */
         
     }
     .carousel .list .item .title,
     .carousel .list .item .topic{
-        font-size: 40px;
+        font-size: 24px;
         font-weight: bold;
-        line-height: 1.1em;
+        line-height: 1.5em;
 }
     .carousel .list .item .content .author{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         
     }
@@ -395,7 +399,7 @@ header img {
     }
     
     .thumbnail {
-        top: 60%;
+        top: 65%;
     }
 
     /* Sesuaikan lebar item thumbnail */
@@ -404,11 +408,11 @@ header img {
         height: 220px;
     }
     .arrows {
-        top: 86%;
+        top: 89%;
     }
     .carousel .list .item img {
-       
-        height: 100%;
+    width: 100%;
+    height: 100%;
     }
 }
 #loading {
