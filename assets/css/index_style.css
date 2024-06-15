@@ -9,6 +9,18 @@ body{
 a{
     text-decoration: none;
 }
+.live-chat {
+    position: fixed;
+    top: 520px; /* Sesuaikan posisi vertikalnya sesuai kebutuhan */
+    left: 35px; /* Sesuaikan posisi horizontalnya sesuai kebutuhan */
+    z-index: 1000; /* Pastikan lebih tinggi dari konten utama */
+}
+
+.live-chat img {
+    width: 50px; /* Sesuaikan ukuran logo live chat */
+    height: auto;
+    cursor: pointer; /* Ubah kursor saat diarahkan ke logo live chat */
+}
 
 header{
     width: 100%;
@@ -409,7 +421,7 @@ header img {
         height: 220px;
     }
     .arrows {
-        top: 84%;
+        top: 80%;
     }
     .carousel .list .item img {
     width: 100%;
