@@ -275,7 +275,7 @@ nav {
 .gallery__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengubah dari auto-fit ke minmax untuk mengontrol ukuran minimum dan maksimum */
   gap: 1rem;
 }
 
@@ -303,9 +303,16 @@ nav {
   font-family: var(--header-font);
 }
 
+.gallery__card img {
+  width: 100%; /* Menjamin gambar mengisi ukuran kartu */
+  height: 400px; /* Menjaga aspek rasio gambar */
+  display: block;
+}
+
 .gallery__card:hover .gallery__content {
   bottom: 0;
 }
+
 
 
 /* Contact section styles */

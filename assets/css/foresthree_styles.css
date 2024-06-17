@@ -283,7 +283,11 @@ nav {
   position: relative;
   overflow: hidden;
 }
-
+.gallery__card img {
+  width: 100%; /* Menjamin gambar mengisi ukuran kartu */
+  height: 400px; /* Menjaga aspek rasio gambar */
+  display: block;
+}
 .gallery__content {
   position: absolute;
   left: 50%;
