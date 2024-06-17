@@ -1,55 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Navbar Toggle
-  const navbarToggle = document.querySelector(".navbar__toggle");
-  const navbarLinks = document.querySelector(".navbar__links");
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav__links");
 
-  navbarToggle.addEventListener("click", function () {
-    navbarLinks.classList.toggle("show");
+  menuIcon.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
   });
 
   // Smooth scrolling
-  const scrollLinks = document.querySelectorAll('.navbar__links a[href^="#"]');
-  
+  const scrollLinks = document.querySelectorAll('.nav__links a[href^="#"]');
+
   scrollLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
       e.preventDefault();
-      
+
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);
-      
+
       window.scrollTo({
         top: targetElement.offsetTop - 100,
         behavior: 'smooth'
       });
+
+      // Close the navigation menu on link click (for mobile)
+      navLinks.classList.remove("active");
     });
   });
-
-  // Slideshow
-  const slides = document.querySelectorAll('.hero__slider img');
-  const intervalTime = 5000; // Interval time in milliseconds
-  let slideInterval;
-  let slideIndex = 0;
-
-  const nextSlide = () => {
-    // Remove current class from all slides
-    slides.forEach(slide => {
-      slide.classList.remove('current');
-    });
-
-    // Increment slideIndex
-    slideIndex++;
-
-    // Check if slideIndex is out of bounds
-    if (slideIndex >= slides.length) {
-      slideIndex = 0; // Reset slideIndex to start
-    }
-
-    // Add current class to the next slide
-    slides[slideIndex].classList.add('current');
-  }
-
-  // Auto slide
-  slideInterval = setInterval(nextSlide, intervalTime);
 
   // Slideshow from tes.html integration
   const tesSlides = document.querySelectorAll('.slide');
@@ -80,30 +56,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Auto slide
   setInterval(nextSlideTes, 5000); // Change slide every 5 seconds
-});
-document.addEventListener("DOMContentLoaded", function () {
-  // ...
-  const heroContent = document.querySelector('.hero__content');
-  setTimeout(function() {
-    heroContent.classList.add('show');
-  }, 500); // Delay animasi untuk efek muncul saat halaman dimuat
-  // ...
-});
-document.addEventListener("scroll", function() {
-  const backToTopButton = document.querySelector('.back-to-top');
-  if (window.scrollY > 300) {
-    backToTopButton.classList.add('visible');
-  } else {
-    backToTopButton.classList.remove('visible');
-  }
-});
 
-// Smooth scrolling untuk kembali ke atas
-document.querySelector('.back-to-top').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+  // Initial show
+  showSlide(currentIndex);
+
+  // Hero content animation
+  const heroContent = document.querySelector('.hero__content');
+  setTimeout(function () {
+    heroContent.classList.add('show');
+  }, 500); // Delay animation for effect on page load
+
+  // Back to top button
+  const backToTopButton = document.querySelector('.back-to-top');
+  document.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+
+  // Smooth scrolling for back to top button
+  backToTopButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 });
   // JavaScript untuk menghilangkan loader setelah halaman dimuat
