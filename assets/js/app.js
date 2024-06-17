@@ -10,7 +10,7 @@ let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 
-let timeRunning = 500;
+let timeRunning = 200;
 let timeAutoNext = 100000;
 
 // Event listener untuk tombol next
@@ -90,12 +90,14 @@ window.addEventListener("load", function() {
     // Sembunyikan elemen loading setelah halaman dimuat
     loader.style.display = "none";
 });
+
+
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/666d48a49a809f19fb3e11f6/1i0de7gqo';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/666d48a49a809f19fb3e11f6/1i0de7gqo';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
